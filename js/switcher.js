@@ -2,10 +2,23 @@ document.addEventListener('DOMContentLoaded', () => {
 	const currentPage = (window.location.pathname).replace('/', '');
 	const pagesList = {
 		'Главная страница': 'index.html',
+		'Категория': 'category.html',
 		'Блог и новости': 'blog.html',
+		'Контакты': 'contacts.html',
+		'Наше руководство': 'managers.html',
 		'Прайс-лист': 'price.html',
 		'Услуги': 'services.html',
-		// '404 страница': '404.html',
+		'Реализация сторонней продукции': 'service01.html',
+		'Проведение предпродажной подготовки овощей и фруктов (мойка, фасовка, перестикеровка)': 'service02.html',
+		'Сдача в аренду складских помещений под хранение': 'service03.html',
+		'Проведение земельных работ': 'service04.html',
+		'Осуществление обмена семенного картофеля на продовольственный по «давальческой» схеме': 'service05.html',
+		'Выращивание и хранение овощей и зерна под заказ': 'service06.html',
+		'Совместное выращивание семенного картофеля класса «Элита»': 'service07.html',
+		'Галерея': 'gallery.html',
+		'СМИ о нас': 'media.html',
+		'Вакансии': 'vacancy.html',
+		'Страница не найдена': '404.html',
 	};
 
 	const link = '' +

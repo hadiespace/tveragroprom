@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="icon" href="favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Вакансии</title>
+    <meta name="description" content="страница вакансий">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230604144800">
+    <link rel="preload" href="fonts/raleway-500.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/raleway-500i.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/raleway-600.woff2" as="font" crossorigin="anonymous">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=45baae8c-d466-4a3c-b05c-ea27e38e8b3d&amp;lang=ru_RU&_v=20230604144800" type="text/javascript"></script>
+  </head>
+  <body class="page__body">
+    <div class="page__wrapper">
+      <header class="header">
+        <div class="header__top-wrap">
+          <div class="header__container container"><a class="header__logo logo logo--header" href="index.html"><span class="logo__img"><img src="img/content/logo.svg" alt="Логотип Тверь Агропром"></span><span class="logo__title">Тверь Агропром</span><span class="logo__text">Агрокомплекс Тверской области</span></a>
+            <address class="header__address">
+              Тверская обл. Лихославльский район,
+              д. Вески, ул. Центральная, д 14а
+
+            </address>
+            <div class="header__contacts"><a class="header__phone" href="tel:+7(482)612-52-22">+7 (482-61) 2-52-22</a>
+                  <div class="header__social social social--header">
+                    <p class="social__text">Мы в мессенджерах</p>
+                    <ul class="social__list">
+                      <li class="social__item"><a class="social__link social__link--whatsapp" href="index.html"><span class="visually-hidden">Мы в Ватсап</span>
+                          <svg width="16" height="16" aria-hidden="true">
+                            <use xlink:href="img/sprite.svg#whatsapp"></use>
+                          </svg></a></li>
+                      <li class="social__item"><a class="social__link social__link--viber" href="index.html"><span class="visually-hidden">Мы в Вайбере</span>
+                          <svg width="16" height="16" aria-hidden="true">
+                            <use xlink:href="img/sprite.svg#viber"></use>
+                          </svg></a></li>
+                      <li class="social__item"><a class="social__link social__link--telegram" href="index.html"><span class="visually-hidden">Мы в Телеграм</span>
+                          <svg width="16" height="16" aria-hidden="true">
+                            <use xlink:href="img/sprite.svg#telegram"></use>
+                          </svg></a></li>
+                    </ul>
+                  </div>
+            </div>
+            <button class="header__modal-open button-main" type="button" aria-expanded="false" aria-controls="">Заказать звонок</button><a class="header__phone-icon" href="tel:+7(482)612-52-22">
+              <svg width="24" height="24" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#phone-icon"></use>
+              </svg></a>
+            <button class="header__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+          </div>
+        </div>
+        <div class="header__bottom-wrap" id="menu">
+          <div class="header__container container">
+                <nav class="header__nav nav">
+                  <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="index.html">О компании</a>
+                      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="dropdown1"><span class="visually-hidden">Открыть выпадающий список</span>
+                        <svg width="16" height="16" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+                        </svg>
+                      </button>
+                      <div class="nav__dropdown dropdown" id="dropdown1">
+                        <button class="dropdown__toggle" type="button" aria-expanded="false" aria-controls="dropdown1">
+                          <svg width="16" height="16" aria-hidden="true">
+                            <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+                          </svg><span>О компании</span>
+                        </button>
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Презентация</a></li>
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Руководство</a></li>
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Галерея</a></li>
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">СМИ о нас</a></li>
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Вакансии</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="index.html">Услуги</a>
+                      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="dropdown2"><span class="visually-hidden">Открыть выпадающий список</span>
+                        <svg width="16" height="16" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+                        </svg>
+                      </button>
+                      <div class="nav__dropdown dropdown" id="dropdown2">
+                        <button class="dropdown__toggle" type="button" aria-expanded="false" aria-controls="dropdown2">
+                          <svg width="16" height="16" aria-hidden="true">
+                            <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+                          </svg><span>Услуги</span>
+                        </button>
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Реализация сторонней продукции</a></li>
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Фасовка</a></li>
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Хранение</a></li>
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Земельные работы</a></li>
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Давальческая схема</a></li>
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Выращивание и хранение</a></li>
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Совместное выращивание </a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="index.html">Прайс-лист</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="index.html">Продукты</a>
+                      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="dropdown4"><span class="visually-hidden">Открыть выпадающий список</span>
+                        <svg width="16" height="16" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+                        </svg>
+                      </button>
+                      <div class="nav__dropdown dropdown" id="dropdown4">
+                        <button class="dropdown__toggle" type="button" aria-expanded="false" aria-controls="dropdown4">
+                          <svg width="16" height="16" aria-hidden="true">
+                            <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+                          </svg><span>Продукты</span>
+                        </button>
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Картофель</a></li>
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Свекла</a></li>
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Пшеница озимая</a></li>
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Пшеница яровая</a></li>
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Овес</a></li>
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Ячмень Нур</a></li>
+                          <li class="dropdown__item"><a class="dropdown__link" href="index.html">Горчица</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="index.html">Заказ</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="index.html">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+            <address class="header__address">
+              Тверская обл. Лихославльский район,
+              д. Вески, ул. Центральная, д 14а
+
+            </address>
+            <div class="header__contacts"><a class="header__phone" href="tel:+7(482)612-52-22">+7 (482-61) 2-52-22</a>
+                  <div class="header__social social social--header">
+                    <p class="social__text">Мы в мессенджерах</p>
+                    <ul class="social__list">
+                      <li class="social__item"><a class="social__link social__link--whatsapp" href="index.html"><span class="visually-hidden">Мы в Ватсап</span>
+                          <svg width="16" height="16" aria-hidden="true">
+                            <use xlink:href="img/sprite.svg#whatsapp"></use>
+                          </svg></a></li>
+                      <li class="social__item"><a class="social__link social__link--viber" href="index.html"><span class="visually-hidden">Мы в Вайбере</span>
+                          <svg width="16" height="16" aria-hidden="true">
+                            <use xlink:href="img/sprite.svg#viber"></use>
+                          </svg></a></li>
+                      <li class="social__item"><a class="social__link social__link--telegram" href="index.html"><span class="visually-hidden">Мы в Телеграм</span>
+                          <svg width="16" height="16" aria-hidden="true">
+                            <use xlink:href="img/sprite.svg#telegram"></use>
+                          </svg></a></li>
+                    </ul>
+                  </div>
+            </div>
+            <button class="header__modal-open button-main" type="button" aria-expanded="false" aria-controls="">Заказать звонок</button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="crumbs">
+          <div class="crumbs__container container">
+            <ul class="crumbs__list">
+              <li class="crumbs__item"><a class="crumb" href="index.html">Главная</a></li>
+              <li class="crumbs__item"><span class="crumb">Вакансии</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="page-vacancy">
+          <div class="page-vacancy__container container">
+            <h1 class="page-vacancy__title h1">Вакансии</h1>
+            <section class="page-vacancy__section">
+              <h2 class="visually-hidden">Открытые вакансии</h2>
+              <ul class="page-vacancy__list">
+                <li class="vacancy">
+                  <h3 class="vacancy__title">Агроном-бригадир</h3>
+                  <dl class="vacancy__list">
+                    <div class="vacancy__wrapper">
+                      <dt class="vacancy__dt">Требования:</dt>
+                      <dd class="vacancy__dd">
+                        Рассмотрим кандидатов, окончивших с/х академию,
+                        без опыта работы, наличие водительского удостоверения кат. В
+                      </dd>
+                    </div>
+                    <div class="vacancy__wrapper">
+                      <dt class="vacancy__dt">Обязанности:</dt>
+                      <dd class="vacancy__dd">
+                        <ul class="vacancy__ul">
+                          <li class="vacancy__li">Контроль полевых работ</li>
+                        </ul>
+                      </dd>
+                    </div>
+                    <div class="vacancy__wrapper">
+                      <dt class="vacancy__dt">Требования:</dt>
+                      <dd class="vacancy__dd">
+                        Оформление по ТК, полный соц.пакет, предоставляем
+                        корпоративное жилье, в сезонные работы возможно премирование
+
+                      </dd>
+                    </div>
+                  </dl>
+                </li>
+                <li class="vacancy">
+                  <h3 class="vacancy__title">Системный администратор</h3>
+                  <dl class="vacancy__list">
+                    <div class="vacancy__wrapper">
+                      <dt class="vacancy__dt">Требования:</dt>
+                      <dd class="vacancy__dd">Наличие образования в области IT, опыт работы</dd>
+                    </div>
+                    <div class="vacancy__wrapper">
+                      <dt class="vacancy__dt">Обязанности:</dt>
+                      <dd class="vacancy__dd">
+                        <ul class="vacancy__ul">
+                          <li class="vacancy__li">Установка и настройка офисного оборудования.</li>
+                          <li class="vacancy__li">Установка и настройка ПО (Microsoft Windows и Office).</li>
+                          <li class="vacancy__li">Монтаж, ввод в эксплуатацию и администрирование корпоративной локальной сети.</li>
+                        </ul>
+                      </dd>
+                    </div>
+                    <div class="vacancy__wrapper">
+                      <dt class="vacancy__dt">Требования:</dt>
+                      <dd class="vacancy__dd">Пятидневная рабочая неделя, полный соц. пакет</dd>
+                    </div>
+                  </dl>
+                </li>
+              </ul>
+              <div class="page-vacancy__info vacancy-info">
+                <div class="vacancy-info__wrapper">
+                  <dl class="vacancy-info__list">
+                    <dt class="vacancy-info__dt">Мы предлагаем:</dt>
+                    <dd class="vacancy-info__dd">
+                      <ul class="vacancy-info__ul">
+                        <li class="vacancy-info__li">Достойную заработную плату;</li>
+                        <li class="vacancy-info__li">Оформление по ТК РФ;</li>
+                        <li class="vacancy-info__li">Проезд до места работы на служебном транспорте;</li>
+                        <li class="vacancy-info__li">Работу на современном предприятии и лидера в своем деле;</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="vacancy-info__wrapper2">
+                  <div class="vacancy-info__wrap">
+                    <p class="vacancy-info__title">
+                      По вопросам трудоустройства просим обращаться
+                      на адреса электронной почты:
+                    </p><a class="vacancy-info__link" href="mailto:kadry@tveragroprom.com">kadry@tveragroprom.com</a><a class="vacancy-info__link" href="mailto:hhrd@tveragroprom.com">hhrd@tveragroprom.com</a>
+                  </div>
+                  <div class="vacancy-info__wrap">
+                    <p class="vacancy-info__title">А так же по номеру телефона:</p><a class="vacancy-info__link" href="tel:+7(48261)2-52-22">+7 (482-61) 2-52-22, добавочный 124 или 116</a>
+                  </div>
+                </div>
+              </div>
+              <p class="page-vacancy__text">
+                Сводная ведомость результатов проведения специальной оценки условий трудa
+                (<a href="index.html" download>скачать</a>).
+              </p>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__top-wrap"><a class="footer__logo logo logo--footer" href="index.html"><span class="logo__img"><img src="img/content/logo.svg" alt="Логотип Тверь Агропром"></span><span class="logo__title">Тверь Агропром</span><span class="logo__text">Агрокомплекс Тверской области</span></a>
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="index.html">Главная</a></li>
+              <li class="footer__item"><a class="footer__link" href="index.html">О компании</a></li>
+              <li class="footer__item"><a class="footer__link" href="index.html">Услуги</a></li>
+              <li class="footer__item"><a class="footer__link" href="index.html">Контакты</a></li>
+              <li class="footer__item"><a class="footer__link" href="index.html">Продукты</a></li>
+              <li class="footer__item"><a class="footer__link" href="index.html">Заказ</a></li>
+              <li class="footer__item"><a class="footer__link" href="index.html">Прайс-лист</a></li>
+            </ul>
+                <div class="footer__social social social--footer">
+                  <ul class="social__list">
+                    <li class="social__item"><a class="social__link social__link--whatsapp" href="index.html"><span class="visually-hidden">Мы в Ватсап</span>
+                        <svg width="16" height="16" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#whatsapp"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link social__link--viber" href="index.html"><span class="visually-hidden">Мы в Вайбере</span>
+                        <svg width="16" height="16" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#viber"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link social__link--telegram" href="index.html"><span class="visually-hidden">Мы в Телеграм</span>
+                        <svg width="16" height="16" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#telegram"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+            <div class="footer__contacts"><a class="footer__phone" href="tel:+7(482)612-52-22">+7 (482-61) 2-52-22</a>
+              <p class="footer__time">c
+                <time datetime="08:00">8:00</time>
+                до
+                <time datetime="19:00">19:00</time> по МСК
+
+              </p>
+            </div>
+            <button class="footer__modal-open button-main" type="button" aria-expanded="false" aria-controls="">Заказать звонок</button>
+          </div>
+        </div>
+        <div class="footer__bottom-wrap">
+          <div class="footer__container container">
+            <p class="footer__copyright">© 2023 Тверь Агропром</p><a class="footer__policy" href="index.html">Политика обработки персональных данных</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/bundle.min.js?_v=20230604144800"></script>
+    <script src="js/switcher.js?_v=20230604144800"></script>
+  </body>
+</html>
