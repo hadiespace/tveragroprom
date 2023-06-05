@@ -3,8 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	const pagesList = {
 		'Главная страница': 'index.html',
 		'Категория': 'category.html',
+		'Картофель сорт «Гала»': 'product.html',
 		'Блог и новости': 'blog.html',
+		'Статья про картофель гала': 'post.html',
 		'Контакты': 'contacts.html',
+		'Расчитать стоимость': 'calculate.html',
 		'Наше руководство': 'managers.html',
 		'Прайс-лист': 'price.html',
 		'Услуги': 'services.html',
