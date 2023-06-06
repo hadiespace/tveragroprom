@@ -13,11 +13,12 @@
     <link rel="manifest" href="favicon/site.webmanifest">
     <title>Картофель сорт «Гала»</title>
     <meta name="description" content="страница картофель сорт «Гала» ">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230605040906">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230607022622">
     <link rel="preload" href="fonts/raleway-500.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/raleway-500i.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/raleway-600.woff2" as="font" crossorigin="anonymous">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=45baae8c-d466-4a3c-b05c-ea27e38e8b3d&amp;lang=ru_RU&_v=20230605040906" type="text/javascript"></script>
+    <link rel="preload" href="fonts/raleway-700.woff2" as="font" crossorigin="anonymous">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=45baae8c-d466-4a3c-b05c-ea27e38e8b3d&amp;lang=ru_RU&_v=20230607022622" type="text/javascript"></script>
   </head>
   <body class="page__body">
     <div class="page__wrapper">
@@ -48,7 +49,7 @@
                     </ul>
                   </div>
             </div>
-            <button class="header__modal-open button-main" type="button" aria-expanded="false" aria-controls="">Заказать звонок</button><a class="header__phone-icon" href="tel:+7(482)612-52-22">
+            <button class="header__modal-open button-main" type="button" aria-expanded="false" aria-controls="" data-modal="modal-recall">Заказать звонок</button><a class="header__phone-icon" href="tel:+7(482)612-52-22">
               <svg width="24" height="24" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#phone-icon"></use>
               </svg></a>
@@ -160,7 +161,7 @@
                     </ul>
                   </div>
             </div>
-            <button class="header__modal-open button-main" type="button" aria-expanded="false" aria-controls="">Заказать звонок</button>
+            <button class="header__modal-open button-main" type="button" aria-expanded="false" aria-controls="" data-modal="modal-recall">Заказать звонок</button>
           </div>
         </div>
       </header>
@@ -191,7 +192,7 @@
                     <dd>450 — 1140 руб.</dd>
                   </div>
                 </dl>
-                <button class="page-product__modal-open button-accent" type="button">Заказать</button>
+                <button class="page-product__modal-open button-accent" type="button" data-modal="modal-product">Заказать</button>
               </div>
               <div class="page-product__second-wrap">
                 <h2 class="page-product__table-title">Харакетристики:</h2>
@@ -373,7 +374,7 @@
 
               </p>
             </div>
-            <button class="footer__modal-open button-main" type="button" aria-expanded="false" aria-controls="">Заказать звонок</button>
+            <button class="footer__modal-open button-main" type="button" aria-expanded="false" aria-controls="" data-modal="modal-recall">Заказать звонок</button>
           </div>
         </div>
         <div class="footer__bottom-wrap">
@@ -383,7 +384,206 @@
         </div>
       </footer>
     </div>
-    <script src="js/bundle.min.js?_v=20230605040906"></script>
-    <script src="js/switcher.js?_v=20230605040906"></script>
+        <div class="modal" id="modal-recall">
+          <div class="modal__content">
+            <button class="modal__close modal-close" type="button" aria-label="закрыть модальное окно">
+              <svg width="16" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#modal-close"></use>
+              </svg>
+            </button>
+            <div class="modal__wrap">
+              <p class="modal__title">Заказать звонок</p>
+              <p class="modal__text">Оставьте ваши контакты, мы свяжемся с Вами <br> в ближайшее время</p>
+              <form class="modal__form form" novalidate>
+                    <div class="field">
+                      <input class="field__input validate-name required" id="recall-name" type="text" name="name" placeholder="Имя">
+                      <label class="visually-hidden" for="recall-name">Ваше имя</label><span class="field__error">Ошибка в имени!</span>
+                    </div>
+                    <div class="field">
+                      <input class="field__input validate-phone required" id="recall-phone" type="tel" name="phone" placeholder="Телефон">
+                      <label class="visually-hidden" for="recall-phone">Ваш телефон</label><span class="field__error"></span>
+                    </div>
+                <button class="modal__submit button button-accent" type="submit">Отправить</button>
+                    <div class="field field--consent">
+                      <input class="required visually-hidden" id="recall-consent" type="checkbox" name="consent" checked>
+                      <label class="field__label" for="recall-consent">Даю согласие на <a href="index.html">обработку персональных данных</a></label>
+                    </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-product">
+          <div class="modal__content">
+            <button class="modal__close modal-close" type="button" aria-label="закрыть модальное окно">
+              <svg width="16" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#modal-close"></use>
+              </svg>
+            </button>
+            <div class="modal__wrap">
+              <p class="modal__title">Заказать продукцию</p>
+              <p class="modal__text">Оставьте ваши контакты, мы свяжемся с Вами в ближайшее время для уточнения деталей</p>
+              <form class="modal__form form" novalidate>
+                    <div class="field">
+                      <input class="field__input validate-name required" id="product-name" type="text" name="name" placeholder="Имя">
+                      <label class="visually-hidden" for="product-name">Ваше имя</label><span class="field__error">Ошибка в имени!</span>
+                    </div>
+                    <div class="field">
+                      <input class="field__input validate-phone required" id="product-phone" type="tel" name="phone" placeholder="Телефон">
+                      <label class="visually-hidden" for="product-phone">Ваш телефон</label><span class="field__error"></span>
+                    </div>
+                <button class="modal__submit button button-accent" type="submit">Отправить</button>
+                    <div class="field field--consent">
+                      <input class="required visually-hidden" id="product-consent" type="checkbox" name="consent" checked>
+                      <label class="field__label" for="product-consent">Даю согласие на <a href="index.html">обработку персональных данных</a></label>
+                    </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-calculate">
+          <div class="modal__content">
+            <button class="modal__close modal-close" type="button" aria-label="закрыть модальное окно">
+              <svg width="16" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#modal-close"></use>
+              </svg>
+            </button>
+            <div class="modal__wrap">
+              <p class="modal__title">Рассчитать стоимость</p>
+              <p class="modal__text">Оставьте ваши контакты, мы свяжемся с Вами в ближайшее время и сообщим итоговую стоимость</p>
+              <form class="modal__form form" novalidate>
+                    <div class="field">
+                      <input class="field__input validate-name required" id="calculate-name" type="text" name="name" placeholder="Имя">
+                      <label class="visually-hidden" for="calculate-name">Ваше имя</label><span class="field__error">Ошибка в имени!</span>
+                    </div>
+                    <div class="field">
+                      <input class="field__input validate-phone required" id="calculate-phone" type="tel" name="phone" placeholder="Телефон">
+                      <label class="visually-hidden" for="calculate-phone">Ваш телефон</label><span class="field__error"></span>
+                    </div>
+                    <div class="field field--message">
+                      <textarea class="field__input" id="calculate-message" name="message" placeholder="Сообщение"></textarea>
+                      <label class="visually-hidden" for="calculate-message">Сообщение</label>
+                    </div>
+                <button class="modal__submit button button-accent" type="submit">Отправить</button>
+                    <div class="field field--consent">
+                      <input class="required visually-hidden" id="calculate-consent" type="checkbox" name="consent" checked>
+                      <label class="field__label" for="calculate-consent">Даю согласие на <a href="index.html">обработку персональных данных</a></label>
+                    </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-price">
+          <div class="modal__content">
+            <button class="modal__close modal-close" type="button" aria-label="закрыть модальное окно">
+              <svg width="16" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#modal-close"></use>
+              </svg>
+            </button>
+            <div class="modal__wrap">
+              <p class="modal__title">Заказать продукцию</p>
+              <p class="modal__text">Оставьте ваши контакты, мы отправим прайс лист на электронную почту</p>
+              <form class="modal__form form" novalidate>
+                    <div class="field">
+                      <input class="field__input validate-name required" id="price-name" type="text" name="name" placeholder="Имя">
+                      <label class="visually-hidden" for="price-name">Ваше имя</label><span class="field__error">Ошибка в имени!</span>
+                    </div>
+                    <div class="field">
+                      <input class="field__input validate-phone required" id="price-phone" type="tel" name="phone" placeholder="Телефон">
+                      <label class="visually-hidden" for="price-phone">Ваш телефон</label><span class="field__error"></span>
+                    </div>
+                    <div class="field">
+                      <input class="field__input validate-email required" id="price-email" type="email" name="email" placeholder="Email">
+                      <label class="visually-hidden" for="price-email">Ваш email</label><span class="field__error"></span>
+                    </div>
+                <button class="modal__submit button button-accent" type="submit">Отправить</button>
+                    <div class="field field--consent">
+                      <input class="required visually-hidden" id="price-consent" type="checkbox" name="consent" checked>
+                      <label class="field__label" for="price-consent">Даю согласие на <a href="index.html">обработку персональных данных</a></label>
+                    </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-click">
+          <div class="modal__content">
+            <button class="modal__close modal-close" type="button" aria-label="закрыть модальное окно">
+              <svg width="16" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#modal-close"></use>
+              </svg>
+            </button>
+            <div class="modal__wrap">
+              <p class="modal__title">Заказать в 1 клик</p>
+              <p class="modal__text">Оставьте ваши контакты, мы свяжемся с Вами в ближайшее время для уточнения деталей заказа</p>
+              <form class="modal__form form" novalidate>
+                    <div class="field">
+                      <input class="field__input validate-name required" id="click-name" type="text" name="name" placeholder="Имя">
+                      <label class="visually-hidden" for="click-name">Ваше имя</label><span class="field__error">Ошибка в имени!</span>
+                    </div>
+                    <div class="field">
+                      <input class="field__input validate-phone required" id="click-phone" type="tel" name="phone" placeholder="Телефон">
+                      <label class="visually-hidden" for="click-phone">Ваш телефон</label><span class="field__error"></span>
+                    </div>
+                <button class="modal__submit button button-accent" type="submit">Отправить</button>
+                    <div class="field field--consent">
+                      <input class="required visually-hidden" id="click-consent" type="checkbox" name="consent" checked>
+                      <label class="field__label" for="click-consent">Даю согласие на <a href="index.html">обработку персональных данных</a></label>
+                    </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-question">
+          <div class="modal__content">
+            <button class="modal__close modal-close" type="button" aria-label="закрыть модальное окно">
+              <svg width="16" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#modal-close"></use>
+              </svg>
+            </button>
+            <div class="modal__wrap">
+              <p class="modal__title">Задать вопрос</p>
+              <p class="modal__text">Напишите ваш вопрос и оставьте контакты, мы свяжемся с Вами в ближайшее время</p>
+              <form class="modal__form form" novalidate>
+                    <div class="field">
+                      <input class="field__input validate-name required" id="question-name" type="text" name="name" placeholder="Имя">
+                      <label class="visually-hidden" for="question-name">Ваше имя</label><span class="field__error">Ошибка в имени!</span>
+                    </div>
+                    <div class="field">
+                      <input class="field__input validate-phone required" id="question-phone" type="tel" name="phone" placeholder="Телефон">
+                      <label class="visually-hidden" for="question-phone">Ваш телефон</label><span class="field__error"></span>
+                    </div>
+                    <div class="field field--message">
+                      <textarea class="field__input" id="question-message" name="message" placeholder="Сообщение"></textarea>
+                      <label class="visually-hidden" for="question-message">Сообщение</label>
+                    </div>
+                <button class="modal__submit button button-accent" type="submit">Отправить</button>
+                    <div class="field field--consent">
+                      <input class="required visually-hidden" id="question-consent" type="checkbox" name="consent" checked>
+                      <label class="field__label" for="question-consent">Даю согласие на <a href="index.html">обработку персональных данных</a></label>
+                    </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-success">
+          <div class="modal__content">
+            <button class="modal__close modal-close" type="button" aria-label="закрыть модальное окно">
+              <svg width="16" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#modal-close"></use>
+              </svg>
+            </button>
+            <div class="modal__wrap">
+              <div class="modal__icon">
+                <svg width="80" height="80" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#modal-check"></use>
+                </svg>
+              </div>
+              <p class="modal__title">Спасибо за заявку!</p>
+              <p class="modal__text">Мы свяжемся с Вами в ближайшее время и сообщим итоговую стоимость</p>
+              <button class="modal__success-close button button-accent modal-close" type="button">Закрыть</button>
+            </div>
+          </div>
+        </div>
+    <script src="js/bundle.min.js?_v=20230607022622"></script>
+    <script src="js/switcher.js?_v=20230607022622"></script>
   </body>
 </html>
